@@ -1,4 +1,4 @@
-module httpfeeds
+module github.com/korve/go-http-feeds
 
 go 1.21
 
