@@ -1,4 +1,4 @@
 all: subscribe
 
 subscribe:
-	go build -o bin/httpfeed-subscribe cmd/http-subscribe/main.go
+	go build -o bin/httpfeed-subscribe cmd/subscribe/main.go

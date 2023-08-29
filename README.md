@@ -44,6 +44,52 @@ func main() {
 }
 ```
 
+## CLI usage
+
+go-http-feeds also comes with a CLI tool to subscribe to HTTP feeds. The CLI tool is available in the `bin` directory.
+
+```bash
+Usage: ./bin/httpfeed-subscribe [options] <endpoint>
+  <endpoint>: HTTP feed endpoint to subscribe to
+  -last-event-id string
+        Last event ID received by the client
+  -poll-delay int
+        Poll delay in milliseconds between each poll to the HTTP endpoint (default 5000)
+  -timeout int
+        timeout in milliseconds until the server must send a response
+  -verbose
+        Verbose output
+```
+
+## Build
+
+To build the CLI tool, run the following command:
+
+### Requirements
+
+- Go 1.16 or higher
+- GNU Make
+
+```bash
+make build
+```
+
+This will create a `bin` directory with the httpfeed-subscribe binary.
+
+## Installation
+
+To install the CLI tool, run the following command:
+
+```bash
+go install github.com/korve/go-http-feeds
+```
+
+Now you can run the CLI tool:
+
+```bash
+httpfeed-subscribe http://localhost:8080/feed
+```
+
 ## License
 
 Apache 2.0, see [LICENSE](LICENSE)
