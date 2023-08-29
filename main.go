@@ -93,7 +93,7 @@ func main() {
 			return
 
 		case e := <-events:
-			fmt.Printf("%s\n", e.Data["sku"])
+			fmt.Printf("%+v\n", e)
 		}
 	}
 }

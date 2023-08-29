@@ -87,7 +87,7 @@ go install github.com/korve/go-http-feeds
 Now you can run the CLI tool:
 
 ```bash
-httpfeed-subscribe http://localhost:8080/feed
+go-http-feeds https://example.http-feeds.org/inventory
 ```
 
 ## License
