@@ -5,7 +5,7 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"httpfeeds/pkg"
+	"github.com/korve/go-http-feeds/pkg"
 	"net/url"
 	"os"
 	"time"
