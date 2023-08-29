@@ -5,15 +5,14 @@ before:
     # You may remove this if you don't use go modules.
     - go mod tidy
 builds:
-  - main: ./cmd/subscribe/
-    env:
+  - env:
       - CGO_ENABLED=0
     goos:
       - linux
       - windows
       - darwin
 nfpms:
-  - package_name: httpfeeds-subscribe
+  - package_name: httpfeeds-subscribe¡
     homepage: https://github.com/korve/go-http-feeds
     maintainer: Andre Eckardt <aeckardt@outlook.com>
     description: |-

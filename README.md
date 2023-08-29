@@ -46,10 +46,10 @@ func main() {
 
 ## CLI usage
 
-go-http-feeds also comes with a CLI tool to subscribe to HTTP feeds. The CLI tool is available in the `bin` directory.
+go-http-feeds also comes with a CLI tool to subscribe to HTTP feeds. The CLI tool is available in the `dist` directory.
 
 ```bash
-Usage: ./bin/httpfeed-subscribe [options] <endpoint>
+Usage: ./dist/httpfeed-subscribe [options] <endpoint>
   <endpoint>: HTTP feed endpoint to subscribe to
   -last-event-id string
         Last event ID received by the client
@@ -74,7 +74,7 @@ To build the CLI tool, run the following command:
 make build
 ```
 
-This will create a `bin` directory with the httpfeed-subscribe binary.
+This will create a `dist` directory with the httpfeed-subscribe binary in it.
 
 ## Installation
 
