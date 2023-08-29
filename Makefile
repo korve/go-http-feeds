@@ -1,3 +1,5 @@
+.PHONY: all subscribe
+
 all: subscribe
 
 subscribe:
